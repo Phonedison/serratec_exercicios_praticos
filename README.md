@@ -1,5 +1,0 @@
-﻿# Conteúdo Serratec
-
- ## 05/03 - Primeiro commit
-   - Foi publicado todos os exercícios elaborador por mim nas aulas
-
