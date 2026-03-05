@@ -31,11 +31,12 @@ Faça um programa para que leia a idade e o nome de um jogador de futebol.
 
 Categoria:
 
-| :--- | :---: |
-| De 10-17: | categorias de base |
-| 18-40: | profissional |
-| acima de 40: | master |
-| abaixo de 10: | escolinha |
+| Idade | Categoria |
+| :--- | :--- |
+| Abaixo de 10 | Escolinha |
+| 10 - 17 | Categorias de Base |
+| 18 - 40 | Profissional |
+| Acima de 40 | Master |
 
 > _A resposta deverá ser conforme exemplo abaixo:_
 > Entrada:
