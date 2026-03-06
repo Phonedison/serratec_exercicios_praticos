@@ -3,10 +3,12 @@
 ### Exercicios 1
 
 Faça um exercício para leitura de dados de uma eleição:
-1 - Candidato - X
-2 - Candidato - Y
-3 - Branco
-0 - Encerrar Votação
+| Código | Candidato | Nome |
+| :--- | :--- | :---: |
+| 1 | Candidato | X |
+| 2 | Candidato | Y |
+| 3 | Branco |
+| 0 | Encerrar Votação|
 
 Qualquer opção diferente anulará o voto
 No final deverá set exibido o total de votos e o percentual de voto de todos candidatos
@@ -17,6 +19,7 @@ No final deverá set exibido o total de votos e o percentual de voto de todos ca
 
 O cardápio de uma lanchonete é exibido abaixo. Prepare um algoritmo que exiba o cardápio e depois leia a quantidade de cada item que você consumiu. Calcule o total da conta. O usuário deverá quando adicionar um item ter a confirmação para continuar inserindo outros itens no cardápio.
 
+| Código | Produto | Valor |
 | :--- | :--- | :---: |
 | 1 | Hambúrguer | R$ 3,00 |
 | 2 | Cheeseburger | R$ 2,50 |

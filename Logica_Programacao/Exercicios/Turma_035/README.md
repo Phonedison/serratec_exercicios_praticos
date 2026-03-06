@@ -31,11 +31,12 @@ Faça um programa para que leia a idade e o nome de um jogador de futebol.
 
 Categoria:
 
-| :--- | :---: |
-| De 10-17: | categorias de base |
-| 18-40: | profissional |
-| acima de 40: | master |
-| abaixo de 10: | escolinha |
+| Idade | Categoria |
+| :--- | :--- |
+| Abaixo de 10 | Escolinha |
+| 10 - 17 | Categorias de Base |
+| 18 - 40 | Profissional |
+| Acima de 40 | Master |
 
 > _A resposta deverá ser conforme exemplo abaixo:_
 > Entrada:
@@ -67,15 +68,17 @@ Faça um algoritmo que leia um número e retorne como resposta se ele é par ou 
 
 Calcule o IMC conforme tabela e fórmula abaixo:
 
-$IMC = PESO / (Altura)^2$
+$$IMC = \frac{Peso}{Altura^2}$$
+
+
+| IMC | Classificação |
 | :--- | :--- |
-| IMC | Classificações |
-| > 18.5 | Abaixo do peso normal |
-| 18.5 - 24.9 | Peso normal |
-| 25 - 29.9| Excesso de peso |
-| 30 - 34.9 | Obesidade classe I |
-| 35 - 39.9 | Obesidade classe II |
-| > 40.0 | Obesidade classe III |
+| Abaixo de 18.5 | Abaixo do peso normal |
+| 18.5 – 24.9 | Peso normal |
+| 25.0 – 29.9 | Excesso de peso |
+| 30.0 – 34.9 | Obesidade Classe I |
+| 35.0 – 39.9 | Obesidade Classe II |
+| Maior que 40.0 | Obesidade Classe III |
 
 _Cliassificação segundo a OMS a partir do IMC_
 
@@ -85,6 +88,7 @@ _Cliassificação segundo a OMS a partir do IMC_
 
 Faça um algoritmo que leia a idade de uma pessoa e de acordo com a idade exiba a seguintes mensagens:
 
+| Idade | Resposta |
 | :--- | :--- |
 | Menor que 16 anos | não pode votar |
 | Entre 16 e 18 anos e maior que 70 anos | voto opcional |
