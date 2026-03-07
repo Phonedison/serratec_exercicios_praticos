@@ -1,3 +1,15 @@
+/*
+
+Atividade 5 – Cálculo de Desconto
+
+- Peça ao usuário o valor da compra.
+- Se for maior ou igual a R$100, aplique 10% de desconto.
+- Caso contrário, não aplique desconto.
+- Exiba o valor final da compra.
+
+
+*/
+
 programa {
 	
 	funcao inicio() {

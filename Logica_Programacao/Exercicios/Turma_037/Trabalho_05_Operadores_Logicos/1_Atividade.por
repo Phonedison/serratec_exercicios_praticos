@@ -1,3 +1,13 @@
+/*
+
+Atividade 1 – Verificar Número entre 10 e 50
+
+- Peça ao usuário um número.
+- Verifique se ele está entre 10 e 50 (incluindo ambos).
+- Use o operador lógico E.
+
+*/
+
 programa {
 	
 	funcao inicio() {

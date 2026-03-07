@@ -1,6 +1,17 @@
-programa {
+/*
+
+Atividade 3 – Comparar Dois Números
+
+- Peça dois números ao usuário.
+- Exiba qual é o maior, ou se são iguais.
+
+*/
+
+programa
+ {
 	
-	funcao inicio() {
+	funcao inicio()
+ {
 		real numeroUm, numeroDois
 		
 		escreva("Informe o primeiro número: ")

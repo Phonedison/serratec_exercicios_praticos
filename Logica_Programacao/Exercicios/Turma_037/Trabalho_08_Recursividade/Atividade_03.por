@@ -1,4 +1,18 @@
-programa {
+
+/*
+
+Atividade 3 – Sequência de Fibonacci
+
+- Crie uma função recursiva chamada fibonacci(n), que retorna o n-ésimo termo da sequência de Fibonacci.
+- A sequência de Fibonacci é definida como:
+  - fibonacci(0) = 0
+  - fibonacci(1) = 1
+  - fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
+
+*/
+
+programa
+ {
 	
 	funcao  inteiro fibonacci(inteiro valor){
 		
@@ -14,7 +28,8 @@ programa {
 		
 	}
 	
-	funcao inicio() {
+	funcao inicio()
+ {
 		inteiro numero
 
 		escreva("Digite um número: ")

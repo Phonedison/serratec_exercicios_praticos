@@ -1,3 +1,14 @@
+/*
+
+Atividade 1 – Verificar se um Número é Par ou Ímpar
+
+- Peça ao usuário um número.
+- Verifique se ele é par ou ímpar.
+- Exiba a mensagem correspondente.
+
+*/
+
+
 programa {
 	
 	funcao inicio() {

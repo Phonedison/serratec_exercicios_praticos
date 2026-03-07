@@ -1,3 +1,13 @@
+
+/*
+Atividade 2 – Somar os Números de 1 até N
+
+- Crie uma função recursiva chamada soma(n), que retorna a soma de todos os números de 1 até n.
+- Caso base: Se n == 1, a soma é 1.
+- Caso recursivo: soma(n) = n + soma(n - 1).
+
+*/
+
 programa
 {
 	funcao inteiro soma(inteiro numero) {
@@ -8,7 +18,8 @@ programa
 		}
 	}
 	
-	funcao inicio() {
+	funcao inicio()
+ {
 		inteiro valor
 
 		escreva("Digite um valor: ")

@@ -1,3 +1,13 @@
+/*
+
+Atividade 4 – Função para Calcular a Média de Três Notas
+
+- Crie uma função chamada calcularMedia() que recebe três notas e retorna a média aritmética.
+- No programa principal, peça três notas ao usuário, use a função para calcular a média e exiba o resultado.
+
+*/
+
+
 programa {
 
   funcao real calcularMedia(real nota[], inteiro qtd) {

@@ -1,3 +1,13 @@
+/*
+
+Atividade 3 – Função para Verificar se um Número é Par ou Ímpar
+
+- Crie uma função chamada ehPar() que recebe um número e retorna verdadeiro se for par e falso se for ímpar.
+- No programa principal, peça um número ao usuário e use a função para exibir a mensagem correspondente.
+
+*/
+
+
 programa {
   
   funcao ehPar(inteiro x) {

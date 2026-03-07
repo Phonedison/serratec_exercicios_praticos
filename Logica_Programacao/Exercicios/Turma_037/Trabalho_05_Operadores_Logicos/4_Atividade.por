@@ -1,3 +1,13 @@
+/*
+
+Atividade 4 – Verificar se um Número NÃO é Positivo
+
+- Peça um número ao usuário.
+- Verifique se NÃO é positivo usando o operador NAO.
+
+*/
+
+
 programa {
 	
 	funcao inicio() {

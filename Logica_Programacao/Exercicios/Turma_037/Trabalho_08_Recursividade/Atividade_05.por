@@ -1,4 +1,18 @@
-programa {
+/*
+
+Atividade 5 – Inverter uma String Recursivamente
+
+- Crie uma função recursiva chamada inverterString(texto), que recebe uma string e a retorna invertida.
+- Caso base: Se a string tem 1 ou 0 caracteres, retorne ela mesma.
+- Caso recursivo: Pegue o último caractere e chame inverterString()
+  para o restante da string.
+
+
+*/
+
+
+programa
+ {
 	
 	inclua biblioteca Texto --> text
 	
@@ -16,7 +30,8 @@ programa {
 		}
 	}
 	
-	funcao inicio() {
+	funcao inicio()
+ {
 	
 	cadeia frase
 

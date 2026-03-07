@@ -1,3 +1,14 @@
+/*
+
+Atividade 3 – Verificar se um Aluno Pode Fazer a Prova Final
+
+- Peça a média final e a frequência do aluno.
+- O aluno só pode fazer a prova final se a média for entre 4 e 6.9 OU a frequência for menor que 75%.
+- ## Use o operador OU.
+
+*/
+
+
 programa {
 	
 	funcao inicio() {

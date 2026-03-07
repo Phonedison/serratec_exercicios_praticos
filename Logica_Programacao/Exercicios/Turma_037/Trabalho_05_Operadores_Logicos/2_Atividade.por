@@ -1,3 +1,13 @@
+/*
+
+Atividade 2 – Verificar se a Pessoa Pode se Cadastrar
+
+- Peça a idade e se a pessoa possui documento válido (S ou N).
+- Para cadastrar, a idade deve ser maior ou igual a 18 E deve ter documento (S).
+- ## Use o operador E.
+
+*/
+
 programa {
 	
 	funcao inicio() {

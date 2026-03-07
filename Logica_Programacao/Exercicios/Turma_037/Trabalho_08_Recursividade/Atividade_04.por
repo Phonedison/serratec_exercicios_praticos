@@ -1,3 +1,13 @@
+/*
+
+Atividade 4 – Contagem Regressiva
+
+- Crie uma função recursiva chamada contagemRegressiva(n), que imprime os números de n até 0.
+- Caso base: Quando n == 0, pare a recursão.
+- Caso recursivo: Exiba n e chame contagemRegressiva(n - 1).
+
+*/
+
 programa
 {
 	inclua biblioteca Util --> util

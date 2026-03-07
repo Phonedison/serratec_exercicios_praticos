@@ -1,3 +1,11 @@
+/*
+
+Atividade 1 - Contar de 1 a 10
+
+- Use um laço para, para exibir os números de 1 a 10.
+
+*/
+
 programa{
 	
 	funcao inicio() {

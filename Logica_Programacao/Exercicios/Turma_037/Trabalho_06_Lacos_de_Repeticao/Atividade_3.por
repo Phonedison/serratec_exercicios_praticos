@@ -1,3 +1,11 @@
+/*
+
+Atividade 3 - Contagem Regressiva de 10 até 0
+
+- Use um laço para, para exibir uma contagem regressiva de 10 até 0.
+
+*/
+
 programa {
   
   funcao inicio() {

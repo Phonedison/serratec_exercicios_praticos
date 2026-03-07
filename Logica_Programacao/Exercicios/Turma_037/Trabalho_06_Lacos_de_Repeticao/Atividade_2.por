@@ -1,3 +1,14 @@
+/*
+
+Atividade 2 - Somar os Números de 1 a N
+
+- Peça um número N ao usuário.
+- Use um laço enquanto para somar os números de 1 até N.
+
+*/
+
+
+
 programa {
 	
  	funcao inicio() {

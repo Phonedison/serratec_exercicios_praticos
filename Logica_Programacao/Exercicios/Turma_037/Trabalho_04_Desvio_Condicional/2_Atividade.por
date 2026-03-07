@@ -1,3 +1,13 @@
+/*
+
+Atividade 2 – Verificar se a Pessoa é Maior de Idade
+
+- Peça a idade do usuário.
+- Se for 18 ou mais, exiba "Você é maior de idade".
+- Caso contrário, exiba "Você é menor de idade".
+
+*/
+
 programa
 {
 	

@@ -1,3 +1,14 @@
+/*
+
+Atividade 4 – Verificar se um Aluno foi aprovado
+
+- Peça ao usuário sua nota final.
+- Se a nota for maior ou igual a 7, exiba "Aprovado".
+- Se for entre 5 e 6.9, exiba "Recuperação".
+- Se for menor que 5, exiba "Reprovado".
+
+*/
+
 programa {
 	funcao inicio()
  {

@@ -1,3 +1,14 @@
+/*
+Atividade 1 – Calcular o Fatorial de um Número
+
+- Crie uma função recursiva chamada fatorial(n) que retorna o fatorial de n.
+- O fatorial de um número é definido como:
+  - n! = n \* (n - 1)!
+  - Com o caso base:
+  - 1! = 1 e 0! = 1
+*/
+
+
 programa {
  funcao inteiro fatorial(inteiro numero) {
 	 

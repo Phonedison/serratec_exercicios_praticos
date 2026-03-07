@@ -1,3 +1,15 @@
+/*
+
+Pedir Senha até acertar
+
+- Peça ao usuário uma senha numérica.
+- Use um laço faça...enquanto para continuar pedindo a senha até
+  que ele acerte.
+
+*/
+
+
+
 programa {
   funcao inicio() {
     cadeia login

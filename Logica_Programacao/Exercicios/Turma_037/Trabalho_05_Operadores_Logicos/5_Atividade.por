@@ -1,3 +1,16 @@
+/*
+
+Atividade 5 – Autenticação Simples de Login
+
+- Peça ao usuário um nome de usuário e uma senha.
+- O usuário só pode acessar se o nome for "admin" E a senha for
+  "1234".
+- Use o operador E.
+
+*/
+
+
+
 programa {
 	
 	funcao inicio() {

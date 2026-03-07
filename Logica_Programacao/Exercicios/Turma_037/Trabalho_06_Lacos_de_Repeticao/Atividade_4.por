@@ -1,3 +1,13 @@
+/*
+
+Atividade 4 - Tabuada de um Número
+
+- Peça um número ao usuário.
+- Use um laço para, para exibir a tabuada desse número de 1 a 10.
+
+/*
+
+
 programa{
   funcao inicio(){
     inteiro valor
