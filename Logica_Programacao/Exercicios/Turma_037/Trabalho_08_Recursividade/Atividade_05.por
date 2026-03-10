@@ -19,7 +19,7 @@ programa
 	funcao cadeia inverter_texto(cadeia texto) {
 		inteiro tamanho = text.numero_caracteres(texto)
 
-		se (tamanho <=1){
+		se (tamanho <= 1){
 			retorne texto
 	
 		} senao {
@@ -47,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 366; 
+ * @POSICAO-CURSOR = 514; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
