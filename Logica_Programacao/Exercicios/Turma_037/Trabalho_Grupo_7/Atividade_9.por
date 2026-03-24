@@ -15,7 +15,7 @@ programa {
 			retorne 1
 			
 		} senao {
-			retorne fibonacci(numero - 1) + fibonacci(numero - 2)
+			retorne funcao_fibonacci(numero - 1) + funcao_fibonacci(numero - 2)
 		}
 		
 	}
@@ -28,9 +28,9 @@ programa {
 		leia(valor)
 
 		inteiro resultado = funcao_fibonacci(valor)
-		escreva ("A sequência Fibonacci a partir do valor "+ valor + " é : \n\n")
+		escreva ("A sequência Fibonacci a partir do valor "+ valor + " é : \n")
 		para (inteiro i = 0; i < valor; i++) {
-			escreva (fibonacci(i), " ")
+			escreva (funcao_fibonacci(i), " ")
 		}
 		escreva("")
 	}

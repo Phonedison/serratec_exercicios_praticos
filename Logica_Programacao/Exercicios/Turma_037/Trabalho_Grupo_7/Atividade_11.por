@@ -5,7 +5,6 @@ Questão 11 - Média dos números pares e ímpares de um vetor
 */
 
 programa {
-
   funcao inicio() {
     //declaração de variaveis / vetores
     const inteiro QTD = 10
@@ -36,7 +35,5 @@ programa {
   escreva("\n")
   escreva("A média da soma dos números impares é: " + (soma_impar / contador_impares))
   escreva("\n")
-
-
   }
 }

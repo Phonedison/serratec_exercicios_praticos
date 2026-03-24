@@ -14,7 +14,7 @@ programa{
 	  caracter vogais[22] = {'a', 'á', 'à', 'â', 'ã', 'e', 'é', 'è', 'ê', 'i', 'í', 'ì', 'î', 'o', 'ó', 'ò', 'ô', 'õ', 'u', 'ú', 'ù', 'û'}
 
     //Atribui uma frase a váriavel frase
-    escreva("Digite a sua frase quee iremos informar quantas vogais ela possui:\n")
+    escreva("Digite a sua frase que iremos informar quantas vogais ela possui:\n")
     leia(frase)
 
     //quantidade de letras e contador de vogais
