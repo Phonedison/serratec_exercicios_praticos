@@ -3,10 +3,8 @@
 
 CREATE DATABASE clinica_odontologica;
 
-/* Criação das TABELAS: */
-
 --> PACIENTES
-CREATE TABLE pacientes (
+CREATE TABLE paciente (
   id_paciente SERIAL PRIMARY KEY,
   nome VARCHAR(150) NOT NULL,
   cpf VARCHAR(11) NOT NULL,
@@ -15,11 +13,7 @@ CREATE TABLE pacientes (
   email VARCHAR(100) NOT NULL,
   endereco  VARCHAR(150) NOT NULL,
   qtd_consulta INT NOT NULL
-)
-
-
----------------------------------------------------------------
-
+);
 
 --> DENTISTA
 CREATE TABLE dentista (
@@ -27,8 +21,7 @@ CREATE TABLE dentista (
   nome VARCHAR(150) NOT NULL,
   cpf VARCHAR(11) NOT NULL,
   cro VARCHAR(100) NOT NULL,
-  especialidade VARCHAR(100) NOT NULL
-);
+  especialidade VARCHAR(100) NOT NULL);
 
 
 ---> HORARIO DE ATENDIMENTO
@@ -41,8 +34,8 @@ CREATE TABLE horario_dentista (
   id_dentista INT NOT NULL,
 
 ---> Referenciando as chaves extrangeiras
-  FOREIGN KEY (id_dentista) REFERENCES dentista (id_dentista);
-)
+  FOREIGN KEY (id_dentista) REFERENCES dentista (id_dentista)
+);
 
 
 ---------------------------------------------------------------
@@ -58,16 +51,16 @@ CREATE TABLE consulta (
   data_horario DATE NOT NULL,
   descricao_atendimento VARCHAR(150) NOT NULL,
   prescricao VARCHAR(150) NOT NULL,
-  status VARCHAR(30) status_consulta,
+  status status_consulta,
 
 ---> Declarando as chaves extrangeiras
   id_paciente INT NOT NULL,
   id_dentista INT NOT NULL,
 
 ---> Referenciando as chaves extrangeiras
-  FOREIGN KEY (id_paciente) REFERENCES pacientes (id_paciente),
-, FOREIGN KEY (id_dentista) REFERENCES dentista (id_dentista);
-)
+  FOREIGN KEY (id_paciente) REFERENCES paciente (id_paciente),
+  FOREIGN KEY (id_dentista) REFERENCES dentista (id_dentista)
+);
 
 
 ---------------------------------------------------------------
@@ -83,9 +76,8 @@ CREATE TABLE procedimento (
   id_consulta INT NOT NULL,
 
 ---> Referenciando as chaves extrangeiras
-  FOREIGN KEY (id_consulta) REFERENCES consulta (id_consulta);
-)
-
+  FOREIGN KEY (id_consulta) REFERENCES consulta (id_consulta)
+);
 
 
 ---------------------------------------------------------------
@@ -94,36 +86,36 @@ CREATE TABLE procedimento (
 
 
 --> TABELA PACIENTE
-  INSERT INTO pacientes
+  INSERT INTO paciente
     (nome, cpf, data_nascimento, telefone, email, endereco, qtd_consulta)
   VALUES
-    ('Ana Maria Silva',           '12345678900',   '1993-05-20',   '11999887766',   'ana.silva@mail.com',       'Rua das Flores, 100',   0),
-    ('Marcos Paulo Lima',         '23456789011',   '1980-08-12',   '11988776655',   'marcos.lima@mail.com',     'Av. Brasil, 210',       0),
-    ('Pedro Almeida Oliveira',    '34567890122',   '1989-10-15',   '11977665544',   'pedro.almeida@mail.com',   'Rua Joana, 31',         0),
-    ('Paula Tejando Souza',       '45678901233',   '2001-09-07',   '11999886677',   'paula.souza@mail.com',     'Rua Curitiba, 44',      0),
-    ('Roberto Monteiro Dias',     '56789012344',   '1996-04-04',   '11999885522',   'roberto.dias@mail.com',    'Av. Paulista, 90',      0),
-    ('Luciana Gomes Torres',      '67890123455',   '1987-09-21',   '11999884321',   'luciana.torres@mail.com',  'Rua Verde, 17',         0),
-    ('Camila Santoro Castro',     '78901234566',   '1995-12-23',   '11999881100',   'camila.castro@mail.com',   'Rua Bela, 75',          0),
-    ('Mateus Tamaki Ramos',       '89012345677',   '1973-11-19',   '11999880099',   'mateus.ramos@mail.com',    'Av. Central, 333',      0),
-    ('Bianca Prado Oliveiro',     '90123456788',   '1988-04-28',   '11998887766',   'bianca.prado@mail.com',    'Rua Prisma, 111',       0),
-    ('Sergio Nunes Albuquerque',  '01234567899',   '1999-07-22',   '11994442233',   'sergio.nunes@mail.com',    'Av. Santos, 2',         0);
+    ('Ana Maria Silva',                 '12345678900',        '1993-05-20',       '11999887766',        'ana.silva@mail.com',            'Rua das Flores, 100',        0),
+    ('Marcos Paulo Lima',               '23456789011',        '1980-08-12',       '11988776655',        'marcos.lima@mail.com',          'Av. Brasil, 210',            0),
+    ('Pedro Almeida Oliveira',          '34567890122',        '1989-10-15',       '11977665544',        'pedro.almeida@mail.com',        'Rua Joana, 31',              0),
+    ('Paula Tejando Souza',             '45678901233',        '2001-09-07',       '11999886677',        'paula.souza@mail.com',          'Rua Curitiba, 44',           0),
+    ('Roberto Monteiro Dias',           '56789012344',        '1996-04-04',       '11999885522',        'roberto.dias@mail.com',         'Av. Paulista, 90',           0),
+    ('Luciana Gomes Torres',            '67890123455',        '1987-09-21',       '11999884321',        'luciana.torres@mail.com',       'Rua Verde, 17',              0),
+    ('Camila Santoro Castro',           '78901234566',        '1995-12-23',       '11999881100',        'camila.castro@mail.com',        'Rua Bela, 75',               0),
+    ('Mateus Tamaki Ramos',             '89012345677',        '1973-11-19',       '11999880099',        'mateus.ramos@mail.com',         'Av. Central, 333',           0),
+    ('Bianca Prado Oliveiro',           '90123456788',        '1988-04-28',       '11998887766',        'bianca.prado@mail.com',         'Rua Prisma, 111',            0),
+    ('Sergio Nunes Albuquerque',        '01234567899',        '1999-07-22',       '11994442233',        'sergio.nunes@mail.com',         'Av. Santos, 2',              0);
 
 
 
 --> TABELA DENTISTA
-  INSERT INTO dentistas
+  INSERT INTO dentista
     (nome, cpf, cro, especialidade)
   VALUES
-    ('Ricardo Alencar Souza',   '12345678901',    'SP-12345',    'Ortodontia'),
-    ('Mariana Dias Ferreira',   '23456789012',    'RJ-23456',    'Implantodontia'),
-    ('Carlos Alberto Menezes',  '34567890123',    'MG-34567',    'Implantodontia'),
-    ('Beatriz Santos Oliveira', '45678901234',    'PR-45678',    'Endodontia'),
-    ('Fernando Costa Silva',    '56789012345',    'SC-56789',    'Periodontia'),
-    ('Juliana Lima Rocha',      '67890123456',    'RS-67890',    'Odontologia'),
-    ('Roberto Pires Gomes',     '78901234567',    'BA-78901',    'Endodontia'),
-    ('Patrícia Mendes Vaz',     '89012345678',    'ES-89012',    'Prótese Dentária'),
-    ('Gustavo Henrique Luz',    '90123456789',    'GO-90123',    'Estomatologia'),
-    ('Helena Silveira Ramos',   '01234567890',    'DF-01234',    'Odontogeriatria');
+    ('Ricardo Alencar Souza',           '12345678901',         'SP-12345',           'Ortodontia'),
+    ('Mariana Dias Ferreira',           '23456789012',         'RJ-23456',           'Implantodontia'),
+    ('Carlos Alberto Menezes',          '34567890123',         'MG-34567',           'Implantodontia'),
+    ('Beatriz Santos Oliveira',         '45678901234',         'PR-45678',           'Endodontia'),
+    ('Fernando Costa Silva',            '56789012345',         'SC-56789',           'Periodontia'),
+    ('Juliana Lima Rocha',              '67890123456',         'RS-67890',           'Odontologia'),
+    ('Roberto Pires Gomes',             '78901234567',         'BA-78901',           'Endodontia'),
+    ('Patrícia Mendes Vaz',             '89012345678',         'ES-89012',           'Prótese Dentária'),
+    ('Gustavo Henrique Luz',            '90123456789',         'GO-90123',           'Estomatologia'),
+    ('Helena Silveira Ramos',           '01234567890',         'DF-01234',           'Odontogeriatria');
 
 
 
@@ -131,16 +123,16 @@ CREATE TABLE procedimento (
   INSERT INTO horario_dentista
     (horario_inicial,horario_final, id_dentista)
   VALUES
-    ('08:00:00', '12:00:00',  1),
-    ('13:30:00', '17:30:00',  1),
-    ('09:00:00', '12:00:00',  2),
-    ('08:00:00', '13:00:00',  3),
-    ('14:00:00', '19:00:00',  4),
-    ('07:30:00', '11:30:00',  5),
-    ('13:00:00', '17:00:00',  6),
-    ('08:00:00', '12:00:00',  7),
-    ('13:30:00', '18:30:00',  2),
-    ('10:00:00', '16:00:00',  10);
+    ('08:00:00',    '12:00:00',     1),
+    ('13:30:00',    '17:30:00',     1),
+    ('09:00:00',    '12:00:00',     2),
+    ('08:00:00',    '13:00:00',     3),
+    ('14:00:00',    '19:00:00',     4),
+    ('07:30:00',    '11:30:00',     5),
+    ('13:00:00',    '17:00:00',     6),
+    ('08:00:00',    '12:00:00',     7),
+    ('13:30:00',    '18:30:00',     2),
+    ('10:00:00',    '16:00:00',     10);
 
 
 
@@ -148,20 +140,20 @@ CREATE TABLE procedimento (
   INSERT INTO consulta
       (data_horario, descricao_atendimento, prescricao, status, id_paciente, id_dentista)
   VALUES
-      ('2024-05-10 08:30',      'Limpeza de rotina e aplicação de flúor	Enxaguante bucal sem álcool',          'Realizado',      1,	1),
-      ('2024-05-10 10:00',      'Avaliação de dor no siso superior	Agendamento de extração',                  'Agendada',       2,	7),
-      ('2024-05-11 14:00',      'Restauração em resina composta (dente 26)	Evitar alimentos duros por 24h',   'Realizado',      3,	2),
-      ('2024-05-12 09:15',      'Ajuste de aparelho ortodôntico	Troca das ligaduras elásticas',                'Realizado',      4,	1),
-      ('2024-05-12 11:00',      'Início de tratamento de canal	Amoxicilina 500mg (7 dias)',                   'Em andamento',   5,	4),
-      ('2024-05-13 15:30',      'Moldagem para prótese fixa	Aguardar prova da infraestrutura',                 'Agendada',       6,	8),
-      ('2024-05-14 08:00',      'Paciente não compareceu	Reagendar via telefone',                             'Cancelada',      7,	5),
-      ('2024-05-14 16:45',      'Clareamento dental de consultório	Gel dessensibilizante',                    'Realizado',      8,	6),
-      ('2024-05-15 10:30',      'Raspagem periodontal subgengival	Clorexidina 0,12% por 7 dias',               'Em andamento',   9,	5),
-      ('2024-05-15 14:00',      'Avaliação para implante dentário	Solicitação de Tomografia',                  'Agendada',      10,	3);
+      ('2024-05-10 08:30',      'Limpeza de rotina e aplicação de flúor.',	  'Enxaguante bucal sem álcool',              'Realizada',      1,	            1),
+      ('2024-05-10 10:00',      'Avaliação de dor no siso superior.',	        'Agendamento de extração',                  'Agendada',       2,	            7),
+      ('2024-05-11 14:00',      'Restauração em resina composta (dente 26).',	'Evitar alimentos duros por 24h',           'Realizada',      3,	            2),
+      ('2024-05-12 09:15',      'Ajuste de aparelho ortodôntico.',	          'Troca das ligaduras elásticas',            'Realizada',      4,	            1),
+      ('2024-05-12 11:00',      'Início de tratamento de canal.',	            'Amoxicilina 500mg (7 dias)',               'Em andamento',   5,	            4),
+      ('2024-05-13 15:30',      'Moldagem para prótese fixa.',	              'Aguardar prova da infraestrutura',         'Agendada',       6,	            8),
+      ('2024-05-14 08:00',      'Paciente não compareceu.',	                  'Reagendar via telefone',                   'Cancelada',      7,	            5),
+      ('2024-05-14 16:45',      'Clareamento dental de consultório.',	        'Gel dessensibilizante',                    'Realizada',      8,	            6),
+      ('2024-05-15 10:30',      'Raspagem periodontal subgengival.',	        'Clorexidina 0,12% por 7 dias',             'Em andamento',   9,	            5),
+      ('2024-05-15 14:00',      'Avaliação para implante dentário.',	        'Solicitação de Tomografia',                'Agendada',       10,	            3);
 
 
 --> TABELA PROCEDIMENTO
-  INSERT INTO procedimento 
+  INSERT INTO procedimento
       (nome, descricao,id_consulta)
   VALUES
     ('Profilaxia Simples',	        'Remoção de placa bacteriana e polimento coronário.',	               1),
@@ -181,19 +173,18 @@ CREATE TABLE procedimento (
 --- ATUALIZAÇÃO DE REGISTROS COM CONDIÇÕES EM UMA TABELA ---
 
 --> ALTERAÇÃO DO TIPO DE ATRIBUTO 
-ALTER TABLE pacientes ALTER COLUMN qtd_consulta DROP NOT NULL;
-ALTER TABLE consulta ALTER COLUMN data_horario TIMESTAMP CONSTRAINT;
+ALTER TABLE paciente ALTER COLUMN qtd_consulta DROP NOT NULL;
+ALTER TABLE consulta ALTER COLUMN data_horario TYPE TIMESTAMP;
 
---> TABELA PACIENTE
-UPDATE pacientes 
-SET qtd_consulta = COALESCE((
-  SELECT COUNT(*) FROM consulta
-  WHERE consulta.id_paciente = pacientes.id_paciente
-),0)
-WHERE qtd_consulta IS NULL;
-
-
--- Explicação:
--- Sim, esse comando funciona corretamente em PostgreSQL.
--- Ele irá contar quantas consultas cada paciente tem na tabela "consulta" e atualizar o campo qtd_consulta para cada paciente cujo valor é NULL.
--- COALESCE é usado para garantir que, se o paciente não tiver nenhuma consulta, o valor atualizado seja 0 (não NULL).
+--> MÉTODO DE PREENCHIMENTO DA TABELA PACIENTE QUANDO TIVER DADOS DE OUTRO 'PACIENTE' NA TABELA 'CONSULTA'
+UPDATE paciente p
+SET qtd_consulta = sub.total --> qtd_consulta recebe o valor da 'contagem' da tabela 'consulta'
+FROM (
+    --> seleciona o 'id_paciente' e contagem de 'id_paciente'
+    SELECT p2.id_paciente, COUNT(c.id_consulta) AS total
+    FROM paciente p2
+    LEFT JOIN consulta c --> Associa os dados do lado esquerdo com a tabela direita
+		ON p2.id_paciente = c.id_paciente
+    GROUP BY p2.id_paciente --> Agrupa os dados com a coluna 
+) AS sub
+WHERE p.id_paciente = sub.id_paciente;

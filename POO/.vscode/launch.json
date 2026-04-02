@@ -1,0 +1,33 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Exercicio_1",
+      "request": "launch",
+      "mainClass": "Turma_34.Exercicios.Exercicio_1",
+      "projectName": "POO_8fd05544"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "POO_8fd05544"
+    },
+    {
+      "type": "jdk",
+      "request": "launch",
+      "name": "Launch Java App"
+    },
+    {
+      "name": "Attach by com.sun.jdi.SharedMemoryListen",
+      "type": "jdk",
+      "request": "attach",
+      "listen": "${command:jdk.java.attachDebugger.connector.com.sun.jdi.SharedMemoryListen.listen}"
+    }
+  ]
+}

@@ -58,3 +58,5 @@
   /*
     Os índices ajudam a acelerar as consultas no banco, evitando a leitura completa das tabelas, tornando buscas, ordenações e junções mais rápidas, mas vale ressaltar que, o índice pode prejudicar o desempenho, deixam inserções, atualizações e exclusões mais lentas, ocupam mais espaço e podem aumentar a necessidade de manutenção.
   */
+
+  
